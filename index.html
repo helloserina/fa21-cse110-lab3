@@ -62,34 +62,30 @@
             <h1> ~PVP Updates~ </h1>
             <div>
                 <h2> President(s) </h2>
-                <p> To-Do List
+                <p> To-Do List </p>
                 <ol>
                     <li> <b> Support our board! </b> </li>
                     <li> Keep our mission + vision in mind </li>
                     <li> <em> Respond </em> to emails </li>
                 </ol>
-                </p>
             </div>
             <div>
                 <h2> VP External </h2>
-                <p> To-Do List
+                <p> To-Do List </p>
                 <ul>
                     <li> Partner with other LGBTQ+ orgs </li>
                     <li> Work with the LGBT Resource Center </li>
                     <li> Partner with our Diversity Org friends </li>
                 </ul>
-                </p>
-                </p>
             </div>
             <div>
                 <h2> VP Internal </h2>
-                <p> To-Do List
+                <p> To-Do List </p>
                 <ul>
                     <li> Partner with other LGBTQ+ orgs </li>
                     <li> Work with the LGBT Resource Center </li>
                     <li> Partner with our Diversity Org friends </li>
                 </ul>
-                </p>
             </div>
             <div>
                 <h2> VP Finance </h2>
@@ -100,28 +96,25 @@
             <h1>General Board Updates </h1>
             <div>
                 <h3> Qtorship Chair </h3>
-                <p> To-Do List
-                    <ul>
-                        <li> Pair mentors/mentees </li>
-                        <li> Hold bonding events </li>
-                    </ul>
-                    </p>
+                <p> To-Do List </p>
+                <ul>
+                    <li> Pair mentors/mentees </li>
+                    <li> Hold bonding events </li>
+                </ul>
             </div>
             <div>
                 <h3> Technical Development Chair </h3>
-                <p> To-Do List
-                    <ul>
-                        <li> Collaborate on holding professional dev events </li>
-                    </ul>
-                    </p>
+                <p> To-Do List </p>
+                <ul>
+                    <li> Collaborate on holding professional dev events </li>
+                </ul>
             </div>
             <div>
                 <h3> Outreach/Publicity </h3>
-                <p> To-Do List
-                    <ul>
-                        <li> Prepare posters, flyers, etc </li>
-                    </ul>
-                    </p>
+                <p> To-Do List </p>
+                <ul>
+                    <li> Prepare posters, flyers, etc </li>
+                </ul>
             </div>
         </section>
         <hr>
@@ -134,11 +127,20 @@
                 <input type="text" id="name" name="name">
                 <br><br>
 
-                <label for="pid">PID:</label>
-                <input type="text" id="pid" name="pid">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
                 <br><br>
 
-                <label for="year">What year are you? (dropdown)</label>
+                <label for="ucsdStudent">Are you a UCSD Student?</label>
+
+                <input type="checkbox" id="checkboxYes" name="ucsdStudent">
+                <label for="checkboxYes">Yes</label>
+
+                <input type="checkbox" id="checkboxNo" name="ucsdStudent">
+                <label for="checkboxNo">No</label>
+                <br><br>
+
+                <label for="yearChoices">What year are you? (dropdown)</label>
                 <input list="year" id="yearChoices" name="yearChoices" />
                 <datalist id="year">
                     <option value="First">
@@ -158,7 +160,7 @@
                 <fieldset>
                     <legend>UCSD College?</legend>
                     <input type="radio" id="erc" name="College">
-                    <label for="ERC">ERC</label>
+                    <label for="erc">ERC</label>
 
                     <input type="radio" id="seventh" name="College">
                     <label for="seventh">Seventh</label>
