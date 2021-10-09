@@ -9,6 +9,7 @@
     <title> oSTEM Meeting Minutes </title>
     <link rel="icon" type="image/png"
         href="https://clubrunner.blob.core.windows.net/00000305556/Images/oSTEM-Logo-Registered.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,43 +22,29 @@
         <nav>
             <a href="/index.html">Return to the top</a>
         </nav>
-        <hr>
     </header>
     <main>
         <section>
             <h1> Check-Ins: Rose, Bud, Thorn </h1>
         </section>
-        <hr>
         <section>
             <h1> Board Tasks </h1>
             <ol>
                 <li>
-                    <details>
-                        <summary> We believe in you! </summary>
-                        <img src="assets/hangInThere.jpg" alt="Hang in there!" width=300>
-                    </details>
+                    <img src="assets/hangInThere.jpg" alt="Hang in there!" width=300>
                 </li>
                 <li>
-                    <details>
-                        <summary> Review our video published with the idea center. </summary>
-                        <video width="320" height="240" controls>
-                            <source src="assets/ideaOSTEM.mp4" type="video/mp4">
-                        </video>
-                    </details>
+                    <video width="320" height="240" controls>
+                        <source src="assets/ideaOSTEM.mp4" type="video/mp4">
+                    </video>
                 </li>
                 <li>
-                    <details>
-                        <summary> Listen to the audio recording of the LGBT Resource Center's review of the services and
-                            resources
-                            available to UCSD students. </summary>
-                        <audio controls>
-                            <source src="assets/LGBTResourceCenter.mp3" type="audio/mpeg">
-                        </audio>
-                    </details>
+                    <audio controls>
+                        <source src="assets/LGBTResourceCenter.mp3" type="audio/mpeg">
+                    </audio>
                 </li>
             </ol>
         </section>
-        <hr>
         <section>
             <h1> ~PVP Updates~ </h1>
             <div>
@@ -89,9 +76,14 @@
             </div>
             <div>
                 <h2> VP Finance </h2>
+                <p> To-Do List </p>
+                <ul>
+                    <li> Partner with other LGBTQ+ orgs </li>
+                    <li> Work with the LGBT Resource Center </li>
+                    <li> Partner with our Diversity Org friends </li>
+                </ul>
             </div>
         </section>
-        <hr>
         <section>
             <h1>General Board Updates </h1>
             <div>
@@ -117,77 +109,79 @@
                 </ul>
             </div>
         </section>
-        <hr>
     </main>
     <footer>
-        <section>
             <h1> Member Registration Form (demo) </h1>
-            <form action="https://httpbin.org/post" method="post" id="memberRegistration">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <br><br>
+            <form action="https://httpbin.org/post" method="post" id="memberRegistration" class="form-container">
+                <div id=#item-header>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
 
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
-                <br><br>
+                <div id="item-header">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
 
-                <p>UCSD student?</p>
-                <input type="checkbox" id="checkbox" name="checkbox">
-                <label for="checkbox">Yes</label>
-                <label for="checkbox">No</label>
-                <br><br>
+                <div id="item-row2">
+                    <p>UCSD student?</p>
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox">Yes</label> <label for="checkbox">No</label>
+                </div>
 
-                <label for="yearChoices">What year are you? (dropdown)</label>
-                <input list="year" id="yearChoices" name="yearChoices" />
-                <datalist id="year">
-                    <option value="First">
-                    <option value="Second">
-                    <option value="Third">
-                    <option value="Fourth">
-                </datalist>
-                <br><br>
+                <div id="item-row2">
+                    <label for="yearChoices">What year are you? (dropdown)</label>
+                    <input list="year" id="yearChoices" name="yearChoices" />
+                    <datalist id="year">
+                        <option value="First">
+                        <option value="Second">
+                        <option value="Third">
+                        <option value="Fourth">
+                    </datalist>
+                </div>
 
-                <label for="transfer">Are you a transfer?</label>
-                <select name="transfer" id="transfer">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-                <br><br>
+                <div id="item-row3">
+                    <label for="transfer">Are you a transfer?</label>
+                    <select name="transfer" id="transfer">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
 
-                <fieldset>
-                    <legend>UCSD College?</legend>
-                    <input type="radio" id="erc" name="College">
-                    <label for="erc">ERC</label>
+                <div id="item-row3">
+                    <fieldset>
+                        <legend>UCSD College?</legend>
+                        <input type="radio" id="erc" name="College">
+                        <label for="erc">ERC</label>
 
-                    <input type="radio" id="seventh" name="College">
-                    <label for="seventh">Seventh</label>
+                        <input type="radio" id="seventh" name="College">
+                        <label for="seventh">Seventh</label>
 
-                    <input type="radio" id="warren" name="College">
-                    <label for="warren">Warren</label>
+                        <input type="radio" id="warren" name="College">
+                        <label for="warren">Warren</label>
 
-                    <input type="radio" id="sixth" name="College">
-                    <label for="sixth">Sixth</label>
+                        <input type="radio" id="sixth" name="College">
+                        <label for="sixth">Sixth</label>
 
-                    <input type="radio" id="muir" name="College">
-                    <label for="muir">Muir</label>
+                        <input type="radio" id="muir" name="College">
+                        <label for="muir">Muir</label>
 
-                    <input type="radio" id="marshall" name="College">
-                    <label for="marshall">Marshall</label>
+                        <input type="radio" id="marshall" name="College">
+                        <label for="marshall">Marshall</label>
 
-                    <input type="radio" id="revelle" name="College">
-                    <label for="revelle">Revelle</label>
-                </fieldset>
-                <br><br>
+                        <input type="radio" id="revelle" name="College">
+                        <label for="revelle">Revelle</label>
+                    </fieldset>
+                </div>
 
-                <label for="whyOSTEM">Why do you want to join oSTEM?</label><br>
-                <textarea id="whyOSTEM" name="whyOSTEM" rows="5" cols="30">*Enter why here*</textarea>
-                <br><br>
+                <div id="item-footer">
+                    <label for="whyOSTEM">Why do you want to join oSTEM?</label><br>
+                    <textarea id="whyOSTEM" name="whyOSTEM" rows="5" cols="30">*Enter why here*</textarea>
+                </div>
 
                 <button type="submit" form="memberRegistration" value="Submit">Submit</button>
 
             </form>
-        </section>
-        <hr>
         <section>
             <nav>
                 <a href="/index.html"> Return to the top </a>
