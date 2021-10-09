@@ -1,1 +1,1 @@
-https://helloserina.github.io/Lab2/index.html
+https://helloserina.github.io/fa21-cse110-lab3/

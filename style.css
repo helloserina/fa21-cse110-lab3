@@ -1,0 +1,93 @@
+/* GENERAL CSS TOPICS */
+
+/* Text Styles */
+h1 {
+    color: black;
+    background-color: #ffffff;
+    font-size: 2em;
+    text-decoration: blueviolet wavy underline;
+}
+
+h2 {
+    color: rgb(0,0,0);
+    background-color: hsl(0,0,100);
+    font-size: 175%;
+}
+
+h1:hover {
+    color: red;
+}
+
+* {
+    background-color: white;
+}
+
+/* Sections */
+
+footer {
+    background-color: white;
+    text-align: center;
+    position: static;
+}
+
+div { 
+    display: flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+}
+
+section {
+    margin: auto;
+    padding-left: 10px;
+    border-color: black;
+    border-style: dashed solid;
+    border-width: 2px;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+header {
+    margin: 10px 10px 10px 10px;
+    padding: 1px 1px 1px 1px;
+    max-width: 100%;
+    max-height: 150px;
+    position: sticky;
+}
+
+main {
+    margin-left: 1%;
+    display: contents;
+}
+
+link:active { color: green; }
+
+.form-container {
+    display: grid ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 40% 25% 25%;  
+    grid-template-areas:
+    "header header"
+    "row2 row2"
+    "row3 row3"
+    "footer footer";
+    row-gap: 10px;
+    justify-content: stretch;
+    padding-bottom: 150px;
+}
+
+.item-header {
+    grid-area: header;
+}
+
+.item-row2 {
+    grid-area: row2;
+}
+
+.item-row3 {
+    grid-area: row3;
+}
+
+.item-footer {
+    grid-area: footer;
+}
