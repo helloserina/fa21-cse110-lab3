@@ -10,11 +10,14 @@
     <link rel="icon" type="image/png"
         href="https://clubrunner.blob.core.windows.net/00000305556/Images/oSTEM-Logo-Registered.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1> oSTEM Meeting Minutes </h1>
+        <h1 class = "main.section"> oSTEM Meeting Minutes </h1>
         <strong> Date: September 27, 5:00 PM PST </strong>
         <br>
         <i> Attendees: Serina, Sebastian, Sharan, Ryan, Bryan, Allison, Julia </i>
@@ -124,12 +127,6 @@
                 </div>
 
                 <div id="item-row2">
-                    <p>UCSD student?</p>
-                    <input type="checkbox" id="checkbox" name="checkbox">
-                    <label for="checkbox">Yes</label> <label for="checkbox">No</label>
-                </div>
-
-                <div id="item-row2">
                     <label for="yearChoices">What year are you? (dropdown)</label>
                     <input list="year" id="yearChoices" name="yearChoices" />
                     <datalist id="year">
@@ -172,11 +169,6 @@
                         <input type="radio" id="revelle" name="College">
                         <label for="revelle">Revelle</label>
                     </fieldset>
-                </div>
-
-                <div id="item-footer">
-                    <label for="whyOSTEM">Why do you want to join oSTEM?</label><br>
-                    <textarea id="whyOSTEM" name="whyOSTEM" rows="5" cols="30">*Enter why here*</textarea>
                 </div>
 
                 <button type="submit" form="memberRegistration" value="Submit">Submit</button>

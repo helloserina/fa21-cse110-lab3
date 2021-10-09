@@ -1,11 +1,12 @@
 /* GENERAL CSS TOPICS */
 
 /* Text Styles */
-h1 {
+header > h1 {
     color: black;
     background-color: #ffffff;
     font-size: 2em;
     text-decoration: blueviolet wavy underline;
+    font-family: 'Montserrat';
 }
 
 h2 {
@@ -22,6 +23,14 @@ h1:hover {
     background-color: white;
 }
 
+h1 ~ p {
+    color: black;
+}
+
+h1 + h2 {
+    color: black;
+}
+
 /* Sections */
 
 footer {
@@ -30,7 +39,13 @@ footer {
     position: static;
 }
 
-div { 
+@media screen and (min-width: 400px) {
+    body {
+      background-color: #DCD0FF;
+    }
+}
+
+div > span { 
     display: flex ;
     flex-direction: column;
     flex-wrap: wrap;
@@ -45,6 +60,13 @@ section {
     border-width: 2px;
     border-radius: 15px;
     padding-bottom: 20px;
+}
+
+main.section {
+    border-color: red;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px;
 }
 
 header {
@@ -76,7 +98,7 @@ link:active { color: green; }
     padding-bottom: 150px;
 }
 
-.item-header {
+.form-container .item-header {
     grid-area: header;
 }
 
